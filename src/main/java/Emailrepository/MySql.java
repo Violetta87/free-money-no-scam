@@ -3,11 +3,13 @@ package Emailrepository;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
+
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Mysql {
+public class MySql {
     private Statement stmt;
     private ResultSet rs;
     private String sqlString;
@@ -33,5 +35,18 @@ public class Mysql {
             e.printStackTrace();
         }
     }
+
+    public String getEMailsFromDatabase(){
+        String sqlString = "SELECT FROM (`email`)";
+        ArrayList<String> list = new ArrayList<>();
+
+        list.add()
+
+         return null;
+
+    }
+
+
+
 }
 

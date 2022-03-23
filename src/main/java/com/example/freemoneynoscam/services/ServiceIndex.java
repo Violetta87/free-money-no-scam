@@ -1,11 +1,11 @@
 package com.example.freemoneynoscam.services;
 
-import Emailrepository.Mysql;
+import Emailrepository.MySql;
 
 public class ServiceIndex {
 
     ValidateEmailService validateEmailService = new ValidateEmailService();
-    Mysql mysqlnew = new Mysql();
+    MySql mysqlnew = new MySql();
 
 
 
