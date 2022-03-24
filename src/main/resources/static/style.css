@@ -29,3 +29,15 @@ button{
     background-color:lavender;
     border-bottom-style: dot-dash;
 }
+#button{
+    font-weight: bolder;
+    font-size: 100%;
+
+}
+.scroll{
+    overflow-y:scroll;
+    width: 50%;
+    height: 50%;
+    font-size: 80%;
+    font-weight: bolder;
+}

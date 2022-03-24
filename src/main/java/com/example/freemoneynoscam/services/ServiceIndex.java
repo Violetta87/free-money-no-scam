@@ -1,22 +1,23 @@
 package com.example.freemoneynoscam.services;
 
-import Emailrepository.MySql;
+
+import com.example.freemoneynoscam.EmailDirectory.EmailDirectory;
 
 public class ServiceIndex {
 
     ValidateEmailService validateEmailService = new ValidateEmailService();
-    MySql mysqlnew = new MySql();
+    EmailDirectory emailDirectory = new EmailDirectory();
 
 
 
     public boolean insertToDatabase(String email){
 
-        mysqlnew.connectDB();
+        emailDirectory.connectDB();
 
         boolean validEmail = validateEmailService.isEmailValid(email);
 
         if(validateEmailService.isEmailValid(email)==true){
-            mysqlnew.makeTableMovie(email);
+            emailDirectory.makeTableEmail(email);
             System.out.println("email is correct");
             return true;
         }
