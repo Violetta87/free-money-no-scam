@@ -18,7 +18,7 @@ public class EmailDirectory {
         public void connectDB() {
             try {
                 String url = "jdbc:mysql://localhost:3306/get_money_no_scam";
-                con = DriverManager.getConnection(url, "root", "Password");
+                con = DriverManager.getConnection(url, "root", "password");
                 System.out.println("Ok, we have a connection.");
             } catch (Exception var1) {
                 var1.printStackTrace();
